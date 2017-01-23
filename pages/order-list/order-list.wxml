@@ -1,0 +1,28 @@
+<!--pages/order-list/order-list.wxml-->
+
+<view class="container">
+    <!--支付成功订单-->
+    <navigator url="../order-details/order-details?id={{item.id}}"
+     wx:for="{{payedOrders}}" wx:key="payedOrders" class="o_list">
+        <view class="left">
+            <view class="o_id">单号：{{item.id}}</view>
+            <view class="o_time">下单时间：{{item.time}}</view>
+        </view>
+        <view class="right">
+            <view class="o_state preparing">{{item.state}}</view>
+            <view class="o_total">¥{{item.total}}</view>
+        </view>
+    </navigator>
+    <!--已完成订单-->
+    <navigator url="../order-details/order-details?id={{item.id}}"
+     wx:for="{{completedOrders}}" wx:key="completedOrders" class="o_list">
+        <view class="left">
+            <view class="o_id">单号：{{item.id}}</view>
+            <view class="o_time">下单时间：{{item.time}}</view>
+        </view>
+        <view class="right">
+            <view class="o_state complete">{{item.state}}</view>
+            <view class="o_total">¥{{item.total}}</view>
+        </view>
+    </navigator>
+</view>

@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/order-list/order-list",
+    "pages/order-details/order-details",
     "pages/home/home",
     "pages/index/index",
     "pages/logs/logs"

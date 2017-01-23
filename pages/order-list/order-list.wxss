@@ -1,0 +1,56 @@
+/* pages/order-list/order-list.wxss */
+
+.container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: #eee;
+}
+
+.o_list{
+    width: 100%;
+    height: 200rpx;
+    margin: 20rpx 0;
+    background: #fff;
+    padding: 30rpx;
+}
+
+.left{
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+.left .o_id{
+    font-size: 38rpx;
+    line-height: 70rpx;
+}
+.left .o_time{
+    font-size: 32rpx;
+    line-height: 70rpx;
+}
+
+.right{
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.right .o_state{
+    font-size: 30rpx;
+    line-height: 70rpx;
+    text-align: right;  
+}
+.complete{
+    color: #bbb;
+}
+.preparing{
+    color: #ffc107;
+}
+.right .o_total{
+    font-size: 40rpx;
+    line-height: 70rpx;
+    text-align: right;
+    color: red;
+}
