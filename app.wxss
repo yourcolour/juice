@@ -1,0 +1,64 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+
+/** ///////////////////////////////////////// **/
+view, scoll-view,images,navigator,text{
+  /*margin: 0;*/
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*///////////////////加号／减号///////////////////*/
+.add, .sub{   
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+    position: relative;
+}
+
+.add{
+    background: #f9730a;
+}
+.add:after,.add:before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10rpx;
+    margin-top: -2.5rpx;
+    width: 20rpx;
+    height: 5rpx;
+    background: #fff;
+}
+.add:after{
+    transform: rotate(90deg);
+}
+
+.sub{
+    border: 1rpx solid #f9730a;
+}
+
+.sub:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10rpx;
+    margin-top: -2.5rpx;
+    width: 20rpx;
+    height: 5rpx;
+    background: #f9730a;
+}
+
+
+
+

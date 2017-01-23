@@ -1,0 +1,214 @@
+/* pages/home/home.wxss */
+/*///////////////////tab/////////////////////*/
+.nav{
+    width: 100%;
+    height: 80rpx;
+    background: #f9730a;
+    display: flex;
+}
+
+.tab{
+    flex: 1;
+    font-size: 30rpx;
+    line-height: 80rpx;
+    text-align: center;
+    color: #fff;
+}
+
+.active{
+    border-bottom: 6rpx solid #fff;
+}
+
+/*/////////////////列表////////////////////////*/
+
+.list{
+    width: 100%;
+    padding: 0 20rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    width: 100%;
+    height: 200rpx;  
+    padding: 25rpx 10rpx;
+    border-bottom: 1rpx solid #eee;
+    position: relative;
+}
+
+.item image{
+    width: 150rpx;
+    height: 150rpx;
+    float: left;
+    border-radius: 10rpx;
+    border: 1rpx solid #eee;
+}
+
+.item .content{
+    /*float: left;*/
+    /*width: 380rpx;*/
+    margin-left: 160rpx;
+}
+
+.item .title{
+    display: block;
+    margin: 10rpx;
+    font-size: 30rpx; 
+    line-height: 40rpx;
+    /*text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; */
+}
+
+.item .price{
+    width: 100%;
+    height: 160rpx;
+    margin: 10rpx;
+    overflow: hidden;
+    font-size: 30rpx;
+    line-height: 40rpx;
+    text-indent: 2em;
+    color: #f00;
+}
+
+.choose{
+    position: absolute;
+    right: 10rpx;
+    bottom: 25rpx;
+    width: 100rpx;
+    height: 60rpx;
+    background: #f9730a;
+    border-radius: 30rpx;
+    font-size: 25rpx;
+    line-height: 60rpx;
+    color: #fff;
+    text-align: center;
+}
+
+.count{
+    position: absolute;
+    right: 10rpx;
+    bottom: 25rpx;
+    height: 40rpx;
+}
+
+
+.count > text,.b_count > text{
+    float: right;
+    margin: 0 10rpx;
+    height: 40rpx;
+    font-size: 30rpx;
+    line-height: 40rpx;
+}
+
+
+
+
+/*////////////////弹窗////////////////////*/
+
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: .3;
+}
+
+.box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 600rpx;
+    /*height: 300rpx;*/
+    margin: -150rpx 0 0 -300rpx;
+    padding: 30rpx;
+    background: #fff;
+    border-radius: 15rpx;
+}
+
+.box .close{
+    position: absolute;
+    top: 30rpx;
+    right: 30rpx;
+    color: #000;
+}
+
+.box .title_1{
+    width: 400rpx;
+    height: 40rpx;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30rpx;
+    line-height: 40rpx;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.box .title_2{
+    margin: 20rpx 0;
+    font-size: 30rpx;
+    line-height: 40rpx;
+}
+
+.box .kind{
+    width: 100%;
+    padding: 5rpx 0;
+}
+
+.box .tag{
+    display: inline-block;
+    margin: 5rpx 20rpx;
+    /*width: 120rpx;*/
+    height: 60rpx;
+    padding: 0 30rpx;
+    border: 1rpx solid #aaa;
+    border-radius: 30rpx;
+    font-size: 30rpx;
+    line-height: 60rpx;
+    text-align: center;
+    color: #aaa;
+}
+
+.box .selected{
+    border: 1rpx solid #f9730a;
+    color: #f9730a;
+}
+
+.box .bottom{
+    width: 100%;
+    height: 100rpx;
+    margin-top: 15rpx;
+    border-top: 2rpx solid #eee;
+}
+
+.box .b_count{
+    display: inline-block;
+    margin-top: 40rpx;
+}
+
+.box .b_price{
+    display: inline-block;
+    margin: 40rpx 30rpx 0;
+    font-size: 40rpx;
+    line-height: 40rpx;
+    color: #f00;
+}
+
+.box .b_button{
+    float: right;
+    margin-top: 30rpx;
+    height: 80rpx;
+    background: #f9730a;
+    font-size: 35rpx;
+    line-height: 80rpx;
+    color: #fff;
+    border-radius: 10rpx;
+    padding: 0 20rpx;
+}
+
+.b_hover{
+    background: #a25f1f;
+}

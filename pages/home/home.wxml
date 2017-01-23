@@ -1,0 +1,57 @@
+<!--pages/home/home.wxml-->
+
+<!--tab-->
+<view class="nav">
+  <text class="tab active">招牌</text>
+  <text class="tab">暖饮</text>
+  <text class="tab">冷饮</text>
+  <text class="tab">清茶</text>
+</view>
+
+<!--列表-->
+<view class="list">
+      <view class="item" wx:for="{{juices}}" wx:key="juices">
+        <image src="{{item.image}}"></image>
+        <view class="content">
+            <text class="title">{{item.title}}</text>
+            <text class="price">¥{{item.price}}</text>
+        </view>
+          <view class="choose" wx:if="{{item.hasChoice === false}}">选规格</view>
+          <view class="count" wx:if="{{item.hasChoice === true}}">
+            <text class="add"></text>
+            <text class="num" wx:if="{{num !== 0}}">{{num}}</text>
+            <text class="sub" wx:if="{{num !== 0}}"></text>
+          </view>
+      </view>
+</view>
+
+<!--弹窗-->
+<block wx:if="{{choose === false}}">
+    <view class="mask"></view>
+    <view class="box">
+            <view class="close">X</view>
+            <view class="title_1">百香果苹果汁</view>
+            <view class="title_2">冷热：</view>
+            <view class="kind">
+                <view class="tag selected">冷</view>
+                <view class="tag">热</view>
+            </view>
+            <view class="title_2">糖量：</view>
+            <view class="kind">
+                <view class="tag selected">无糖</view>
+                <view class="tag">少糖</view>
+                <view class="tag">多糖</view>
+            </view>
+            <view class="bottom">
+                <view class="b_count">
+                    <text class="add"></text>
+                    <text class="num">0</text>
+                    <text class="sub"></text>
+                </view>
+                <view class="b_price">¥30</view>
+                <button class="b_button" hover-class="b_hover">加入购物车</button>
+            </view>
+    </view>
+</block>
+
+
